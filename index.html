@@ -1,17 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <a href="/index.html">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/projects.html">Projects</a>
-    <h1>Uzair Akhtar's Portfolio</h1>
-    <p> I love coding </p>
-    <img src="programming.jpg" alt="programming">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand">Uzair Akhtar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project-section">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hi, welcome to my website!</h2>
+                    <p class="hero_desc">I am a graduate electronic engineering and computer science student based in
+                        Nottingham.
+                    </p> <br> <br>
+                    <a href="./CV.pdf" download="" class="btn btn-primary btn-lg"><i class="fa fa-download"
+                            aria-hidden="true"></i> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4"> <br>
+            <h1 class="text-center">About Me</h1>
+            <div class="about-section mt-2 pt-2">
+                <div class="about-img-container">
+                    <img src="images/about.png" class="about-img" alt="">
+                </div>
+                <p class="about-info"><br>I am an ambitious and committed STEM graduate with excellent planning and
+                    teamwork skills due to taking on many fascinating and enjoyable university projects. 
+                    <br><br> From a young age, I have always had a
+                    massive interest on the evolvement of modern technology and the ways it has greatly benefited us
+                    which in turn lead me to pursue a STEM based degree. 
+                    <br><br>My reason for choosing the field of technology
+                    is because I aspire to be involved in the creation of new and improved systems and devices which we
+                    can use in our everyday lives. <br><br> Overall, I view myself as a very motivated and determined individual
+                    who always wants to keep learning and improving my skills in order to reach new levels every year.
+                </p>
+            </div>
+        </div> <br>
+    </section>
+    <section id="services">
+        <div class="container"> <br> <br>
+            <h1 class="text-center">Technical Tools and Skills</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge-700x700.png"
+                                class="skill-img" alt="">
+                            <h1 class="card-title mt-3">HTML</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/pngwing.com (2).png" class="skill-img" alt="">
+                            <h1 class="card-title mt-3">CSS</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/computer-icons-logo-brand-javascript-javaserver-pages-free-892749.png"
+                                class="skill-img" alt="">
+                            <h1 class="card-title mt-3">Javascript</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png"
+                                class="skill-img" alt="">
+                            <h1 class="card-title mt-3">React</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/kisspng-node-js-javascript-react-logo-express-js-javascript-logo-5b4ca5c70f0195.6239386615317498310615.png"
+                                class="skill-img" alt="">
+                            <h1 class="card-title mt-3">NodeJS</h1>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/4373190_docker_logo_logos_icon.png" class="skill-img" alt="">
+                            <h1 class="card-title mt-3">Docker</h1>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/pngwing.com (1).png" class="skill-img" alt="">
+                            <h1 class="card-title mt-3">SQL</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c89ecd95.2067324515339931606505.png"
+                                class="skill-img" alt="">
+                            <h1 class="card-title mt-3">Python</h1>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <img src="./images/kisspng-github-repository-commit-bitbucket-5b087c1077a330.1624531815272827044901.png"
+                                class="skill-img" alt="">
+                            <h1 class="card-title mt-3">Git</h1>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <br>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="project-section">
+        <div class="container"> <br> <br>
+            <h1 class="text-center">Projects</h1>
+            <!-- <div class="project-container mt-4"> -->
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <div class="project-card">
+                        <img src="./images/2022-08-21 (2).png" class="project-img" alt="">
+                        <div class="project-content">
+                            <h1 class="project-title">WePost</h1>
+                            <p class="project-info">
+                                A journaling web application built using JavaScript and NodeJS that allows users to make
+                                anonymous posts as well as include GIFS within their posts.
+                            </p>
+                            <div class="project-btn-grp">
+                                <button onclick="location.href='https://github.com/uzair14/WePost-Client'" class="project-btn github">github repo</button>
+                                <button onclick="location.href='https://we-post.netlify.app/'" class="project-btn live">see live</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="project-card">
+                        <img src="./images/2022-08-21 (3).png" class="project-img" alt="">
+                        <div class="project-content">
+                            <h1 class="project-title">Habit-hole</h1>
+                            <p class="project-info">
+                                A fullstack habit tracking application built using JavaScript, NodeJS and PostgreSQL
+                                that allows users to register, login and track their daily sleeping habits.
+                            </p>
+                            <div class="project-btn-grp">
+                                <button onclick="location.href='https://github.com/uzair14/habit-hole'" class="project-btn github">github repo</button>
+                                <button onclick="location.href='https://habithole.netlify.app/'" class="project-btn live">see live</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <div class="project-card">
+                        <img src="./images//2022-09-07 (2).png" class="project-img" alt="">
+                        <div class="project-content">
+                            <h1 class="project-title">Trial by Trivia</h1>
+                            <p class="project-info">
+                                A fullstack online quiz game built using React, NodeJS and PostgreSQL that allows users
+                                to take turns competing with their friends on a variety of questions.
+                            </p>
+                            <div class="project-btn-grp">
+                                <button onclick="location.href='https://github.com/uzair14/LAP3Client'" class="project-btn github">github repo</button>
+                                <button onclick="location.href='https://62f611ce8c00f41301ee8aa2--trial-by-trivia.netlify.app/'" class="project-btn live">see live</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="project-card">
+                        <img src="./images/2022-09-07 (1).png" class="project-img" alt="">
+                        <div class="project-content">
+                            <h1 class="project-title">Fitness Pro</h1>
+                            <p class="project-info">
+                                A fullstack fitness application built using React and Django that allows users to track
+                                their progress in the gym and invite friends to compete in various custom challenges.
+                            </p>
+                            <div class="project-btn-grp">
+                                <button onclick="location.href='https://github.com/uzair14/Client--Fitness-App'" class="project-btn github">github repo</button>
+                                <button onclick="location.href='https://fit-pro.netlify.app/landing'" class="project-btn live">see live</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- </div> -->
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-5 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text"
+                            placeholder="Your message"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="emaildiv">
+                <a href="#" target="_blank">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    uzair1200@hotmail.co.uk
+                </a>
+                <!-- <a href="#" target = "_blank">
+               <i class="fa fa-phone" aria-hidden="true"></i>
+                07852344108
+            </a> <br> -->
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/uzair14" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="./script/script.js"></script>
+
 </body>
+
 </html>
